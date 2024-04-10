@@ -60,19 +60,6 @@
     <p class="display-6">
     </p>
     <script>
-      const toasts = [
-        false, 
-        "Feeling poor yet?", 
-        "You could be earning more", 
-        "You're not earning enough",
-        "Focus on your career more"];
-
-        setInterval(() => {
-          const toast = toasts[Math.floor(Math.random() * toasts.length)];
-          if (toast) {
-            alert(toast);
-          }
-        }, 1000)
       let counter = 0; 
       setInterval(() => {
         counter += 1;
@@ -80,7 +67,7 @@
         for (let i = 0; i < timers.length; i++) {
           timers[i].innerText = counter;
         }
-      }, 60000)
+      }, 1000)
       // These are the people we are going to be using in our calculator
       const people = {
           elon: {
